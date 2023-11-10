@@ -1,0 +1,19 @@
+default:
+  image:
+    # Specify docker image to be used to execute the pipeline inside
+    name: khulnasoft/kengine:latest
+    entrypoint: [""]
+
+variables:
+  KENGINE_API_KEY: $KENGINE_API_KEY
+
+stages:
+  - report
+
+report:
+  stage: report
+  needs:
+    - push
+  script:
+    # Produces report of your alerts with the latest changes applied.
+    - kengine report

@@ -1,0 +1,9 @@
+image: khulnasoft/kengine:latest
+
+pipelines:
+  default:
+    # Prints report of your alerts
+    - step:
+        name: 'Print report'
+        script:
+          - kengine report

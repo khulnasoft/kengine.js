@@ -1,0 +1,75 @@
+{
+  "name": "kengine-cli",
+  "version": "0.0.82",
+  "description": "",
+  "main": "./build/cli.js",
+  "bin": {
+    "kengine": "./build/cli.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "/assets",
+    "/build"
+  ],
+  "keywords": [
+    "cli",
+    "observability"
+  ],
+  "author": "KhulnaSoft <security@khulnasoft.com> (khulnasoft.com)",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "npx rome check .",
+    "format": "npx rome format .",
+    "rome:fix": "npx rome check . --apply-suggested && npx rome format . --write ",
+    "package:linux": "cp ./node_modules/open/xdg-open ./build/xdg-open && pkg . --no-bytecode --targets node14-linux-x64 --output bin/linux/kengine",
+    "package:alpine": "cp ./node_modules/open/xdg-open ./build/xdg-open && pkg . --no-bytecode --targets node14-alpine-x64 --output bin/linux/kengine",
+    "package:macos": "pkg . --no-bytecode --targets node14-macos-x64 --output bin/macos/kengine",
+    "release:patch": "npm version patch | xargs -i sh -c \"git push && git push && git push origin {}\""
+  },
+  "dependencies": {
+    "asciichart": "^1.5.25",
+    "aws-cron-parser": "^1.1.12",
+    "axios": "^0.26.1",
+    "chalk": "^4.1.2",
+    "ci-info": "^3.6.1",
+    "cli-table3": "^0.6.1",
+    "conf": "^10.1.2",
+    "dayjs": "^1.11.0",
+    "dotenv": "^16.0.0",
+    "enquirer": "^2.3.6",
+    "express": "^4.18.2",
+    "flat": "^5.0.2",
+    "fs-extra": "^10.1.0",
+    "lodash": "^4.17.21",
+    "ms": "^2.1.3",
+    "mustache": "^4.2.0",
+    "open": "^8.4.0",
+    "openai": "^3.2.1",
+    "ora": "^5.4.1",
+    "qs": "^6.11.0",
+    "simple-git": "^3.15.1",
+    "yaml": "^2.1.1",
+    "yargs": "^17.3.1",
+    "yup": "^1.0.0-beta.8"
+  },
+  "devDependencies": {
+    "@types/asciichart": "^1.5.6",
+    "@types/express": "^4.17.15",
+    "@types/figlet": "^1.5.4",
+    "@types/flat": "^5.0.2",
+    "@types/fs-extra": "^9.0.13",
+    "@types/lodash": "^4.14.191",
+    "@types/ms": "^0.7.31",
+    "@types/mustache": "^4.2.2",
+    "@types/node": "^17.0.21",
+    "@types/qs": "^6.9.7",
+    "@types/yargs": "^17.0.9",
+    "pkg": "^5.5.2",
+    "rome": "^11.0.0",
+    "typescript": "^4.6.2"
+  }
+}
