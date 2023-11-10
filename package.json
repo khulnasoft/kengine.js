@@ -1,6 +1,6 @@
 {
   "name": "@khulnasoft/kengine-cli",
-  "version": "0.0.82",
+  "version": "0.0.78",
   "description": "",
   "main": "./build/cli.js",
   "bin": {
