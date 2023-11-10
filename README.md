@@ -46,7 +46,7 @@ Installing the CLI globally provides access to the Kengine command.
 ### Install manually
 
 ```shell
-curl -s https://get.khulnasoft.com | bash
+curl -s https://https://raw.githubusercontent.com/khulnasoft/kengine-cli/install | bash
 ```
 
 ### Install using [Homebrew](https://brew.sh)
