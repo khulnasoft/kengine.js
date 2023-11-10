@@ -33,7 +33,7 @@
   "dependencies": {
     "asciichart": "^1.5.25",
     "aws-cron-parser": "^1.1.12",
-    "axios": "^0.26.1",
+    "axios": "^1.6.0",
     "chalk": "^4.1.2",
     "ci-info": "^3.6.1",
     "cli-table3": "^0.6.1",
