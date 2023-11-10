@@ -65,7 +65,7 @@ brew upgrade kengine
 ### Install using [npm](npmjs.com/)
 
 ```shell
-$ npm install kengine-cli -g
+$ npm install @khulnasoft/kengine-cli -g
 ```
 
 ### Download the compiled binary manually
