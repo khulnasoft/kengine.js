@@ -8,7 +8,11 @@ const { KENGINE_DOMAIN = "khulnasoft.com" } = process.env;
 
 export function welcome() {
   console.log(`${chalk.greenBright("Welcome to Kengine")}\n`);
-  console.log(`${chalk.grey("By using the Kengine terminal you agree with our terms (https://kengine.khulnasoft.com/terms) and our privacy policy (https://kengine.khulnasoft.com/privacy)")}\n`);
+  console.log(
+    `${chalk.grey(
+      "By using the Kengine terminal you agree with our terms (https://kengine.khulnasoft.com/terms) and our privacy policy (https://kengine.khulnasoft.com/privacy)",
+    )}\n`,
+  );
 }
 
 export function userConfigFound(profile: string) {
