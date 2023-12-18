@@ -45,7 +45,7 @@ jobs:
           tar -cvzf kengine-darwin-x64-"$RELEASE_VERSION".tar.gz kengine
 
       - name: Upload tarball artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bin-macos
           path: kengine-darwin-x64-${{ env.RELEASE_VERSION }}.tar.gz
@@ -78,7 +78,7 @@ jobs:
           tar -cvzf kengine-linux-x64-"$RELEASE_VERSION".tar.gz kengine
 
       - name: Upload tarball artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bin-linux
           path: kengine-linux-x64-${{ env.RELEASE_VERSION }}.tar.gz
