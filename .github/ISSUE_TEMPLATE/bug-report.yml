@@ -4,7 +4,7 @@ body:
   - type: checkboxes
     attributes:
       label: Are you using the latest version of the kengine CLI?
-      description: Latest version can be checked at https://github.com/khulnasoft/kengine-cli/releases/latest
+      description: Latest version can be checked at https://github.com/khulnasoft/cli/releases/latest
       options:
         - label: Yes, I'm using the latest version
           required: true

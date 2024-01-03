@@ -61,7 +61,7 @@ export async function handler(argv: Arguments<Options>) {
   let oathData = { id_token: "", otp: "" };
   let onboardingStatus;
   if (demo) {
-    const email = "demo@khulnasoft.com";
+    const email = "demo@khulnasoft.io";
     const otp = await promptForOneTimePassword(email);
     oathData.otp = otp;
   } else {

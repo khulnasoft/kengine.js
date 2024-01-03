@@ -1,7 +1,7 @@
 import axios from "axios";
 import chalk from "chalk";
 import { hideBin } from "yargs/helpers";
-import spinner from "../../services/spinner/index";
+import spinner from "../spinner/index";
 require("dotenv").config();
 import http from "http";
 const argv = hideBin(process.argv);
@@ -16,7 +16,7 @@ const getDomainWithoutSubdomain = (url: string) => {
 };
 
 function getBaseUrl(): string {
-  const { KENGINE_DOMAIN = "khulnasoft.com" } = process.env;
+  const { KENGINE_DOMAIN = "kengine.khulnasoft.com" } = process.env;
   const index = argv.findIndex((val) => val === "--endpoint");
   if (index > -1) {
     const endpoint = argv[index + 1];
@@ -26,7 +26,7 @@ function getBaseUrl(): string {
 }
 
 export function getTuxUrl(): string {
-  const { KENGINE_DOMAIN = "khulnasoft.com" } = process.env;
+  const { KENGINE_DOMAIN = "kengine.khulnasoft.com" } = process.env;
   const index = argv.findIndex((val) => val === "--endpoint");
   if (index > -1) {
     const endpoint = argv[index + 1];
@@ -37,7 +37,7 @@ export function getTuxUrl(): string {
 }
 
 export function getDataUrl(): string {
-  const { KENGINE_DOMAIN = "khulnasoft.com" } = process.env;
+  const { KENGINE_DOMAIN = "kengine.khulnasoft.com" } = process.env;
   const index = argv.findIndex((val) => val === "--endpoint");
   if (index > -1) {
     const endpoint = argv[index + 1];

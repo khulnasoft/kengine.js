@@ -1,6 +1,6 @@
 {
   "name": "@khulnasoft/kengine-cli",
-  "version": "0.0.80",
+  "version": "0.0.84",
   "description": "",
   "main": "./build/cli.js",
   "bin": {
@@ -17,7 +17,7 @@
     "cli",
     "observability"
   ],
-  "author": "KhulnaSoft <security@khulnasoft.com> (khulnasoft.com)",
+  "author": "Kengine <boris@khulnasoft.io> (kengine.khulnasoft.com)",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
@@ -33,7 +33,7 @@
   "dependencies": {
     "asciichart": "^1.5.25",
     "aws-cron-parser": "^1.1.12",
-    "axios": "^1.6.0",
+    "axios": "^1.6.4",
     "chalk": "^4.1.2",
     "ci-info": "^3.6.1",
     "cli-table3": "^0.6.1",
@@ -48,7 +48,7 @@
     "ms": "^2.1.3",
     "mustache": "^4.2.0",
     "open": "^8.4.0",
-    "openai": "^4.17.3",
+    "openai": "^4.24.1",
     "ora": "^5.4.1",
     "qs": "^6.11.0",
     "simple-git": "^3.15.1",

@@ -1,4 +1,5 @@
-# KEngine CLI
+# Kengine CLI
+[![npm][npm_badge]][npm]
 [![Documentation][docs_badge]][docs]
 [![Latest Release][release_badge]][release]
 [![License][license_badge]][license]<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -6,14 +7,10 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
-[![Observability for serverless](./images/kengine.gif)](https://kengine.khulnasoft.com?utm_campaign=kengine-kengine-cli-github-repo&utm_source=github.com&utm_medium=top-banner)
+[![Observability](./images/kengine.gif)](https://kengine.khulnasoft.com?utm_campaign=kengine-kengine-cli-github-repo&utm_source=github.com&utm_medium=top-banner)
 
 
-🛠️ The Developer Toolset for the Serverless World
-
-- 📊 Observability in your terminal: tail your logs and view your traces in your terminal (and finally close your CloudWatch browser tabs)
-- 🪄 Observability as Code: manage your queries, alerts, slos, and more all as code
-- 🧭 Works with any IaC, from the Serverless Framework to SST
+🛠️ The Observability Toolset for the Cloud: observability in your terminal, tail your logs and view your traces in your terminal
 
 ---
 
@@ -29,15 +26,13 @@
 
 ## Introduction
 
-The official command line client for [kengine](https://kengine.khulnasoft.com/). Kengine CLI
-brings the power of Kengine and Observability as Code to the command-line.
+The official command line client for [Kengine](https://kengine.khulnasoft.com/).
 
 Documentation is available on the [Kengine Docs](https://kengine.khulnasoft.com/docs/cli/install/).
 
 ## Goal
 
-The Goal of the Kengine CLI is to provide a simple interface to interact with your Kengine
-applications and deploy your Observability as Code configurations. 
+The Goal of the Kengine CLI is to provide a simple interface to interact with your telemetry data. 
 
 ## Installation
 
@@ -46,7 +41,7 @@ Installing the CLI globally provides access to the Kengine command.
 ### Install manually
 
 ```shell
-curl -s https://https://raw.githubusercontent.com/khulnasoft/kengine-cli/install | bash
+curl -s https://get.kengine.khulnasoft.com | bash
 ```
 
 ### Install using [Homebrew](https://brew.sh)
@@ -65,21 +60,20 @@ brew upgrade kengine
 ### Install using [npm](npmjs.com/)
 
 ```shell
-$ npm install @khulnasoft/kengine-cli -g
+$ npm install @khulnasoft/cli -g
 ```
 
 ### Download the compiled binary manually
 
 Binary releases are available on
-[GitHub Releases](https://github.com/khulnasoft/kengine-cli/releases/latest).
+[GitHub Releases](https://github.com/khulnasoft/cli/releases/latest).
 
 ### Docker
 Binary is also distributed as a [docker image](https://hub.docker.com/r/khulnasoft/kengine)
 
 ### Validate installation
 
-In all cases the installation can be validated by running `kengine -v` in the
-terminal:
+In all cases the installation can be validated by running `kengine -v` in the terminal:
 
 ```shell
 0.0.78
@@ -94,9 +88,7 @@ kengine <command> <subcommand> [flags]
 
 ### Configuration
 
-The configuration files are located in `~/.config/kengine`. Each profile is saved in a file named against the profile.
-The default profile is saved in `~/.config/kengine/default.json`.
-Configuration values can also be set using flags.
+The configuration files are located in `~/.config/kengine`. Each profile is saved in a file named against the profile. The default profile is saved in `~/.config/kengine/default.json`. Configuration values can also be set using flags.
 
 #### Troubleshooting
 
@@ -110,7 +102,7 @@ To learn how to use Kengine to start observing your serverless applications, vis
 [Kengine documentation](https://kengine.khulnasoft.com/docs/).
 
 For full command reference, see the list below, or visit
-[docs.khulnasoft.com](https://kengine.khulnasoft.com/docs/reference/cli).
+[docs.kengine.com](https://kengine.khulnasoft.com/docs/reference/cli).
 
 ## Contributing
 
@@ -127,10 +119,10 @@ bugfixes and improvements, and submitting pull requests to the project.
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://boristane.com/"><img src="https://avatars.githubusercontent.com/u/10452259?v=4?s=100" width="100px;" alt="Boris Tane"/><br /><sub><b>Boris Tane</b></sub></a><br /><a href="https://github.com/khulnasoft/kengine-cli/commits?author=boristane" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Lastin"><img src="https://avatars.githubusercontent.com/u/5638394?v=4?s=100" width="100px;" alt="Maksym Makuch"/><br /><sub><b>Maksym Makuch</b></sub></a><br /><a href="https://github.com/khulnasoft/kengine-cli/commits?author=Lastin" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="http://ankcorn.dev"><img src="https://avatars.githubusercontent.com/u/7361428?v=4?s=100" width="100px;" alt="Thomas Ankcorn"/><br /><sub><b>Thomas Ankcorn</b></sub></a><br /><a href="https://github.com/khulnasoft/kengine-cli/commits?author=Ankcorn" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://maxdiamond.co.uk"><img src="https://avatars.githubusercontent.com/u/23747483?v=4?s=100" width="100px;" alt="Max Diamond"/><br /><sub><b>Max Diamond</b></sub></a><br /><a href="https://github.com/khulnasoft/kengine-cli/commits?author=dmdboi" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://boristane.com/"><img src="https://avatars.githubusercontent.com/u/10452259?v=4?s=100" width="100px;" alt="Boris Tane"/><br /><sub><b>Boris Tane</b></sub></a><br /><a href="https://github.com/Kengine/cli/commits?author=boristane" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Lastin"><img src="https://avatars.githubusercontent.com/u/5638394?v=4?s=100" width="100px;" alt="Maksym Makuch"/><br /><sub><b>Maksym Makuch</b></sub></a><br /><a href="https://github.com/Kengine/cli/commits?author=Lastin" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://ankcorn.dev"><img src="https://avatars.githubusercontent.com/u/7361428?v=4?s=100" width="100px;" alt="Thomas Ankcorn"/><br /><sub><b>Thomas Ankcorn</b></sub></a><br /><a href="https://github.com/Kengine/cli/commits?author=Ankcorn" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://maxdiamond.co.uk"><img src="https://avatars.githubusercontent.com/u/23747483?v=4?s=100" width="100px;" alt="Max Diamond"/><br /><sub><b>Max Diamond</b></sub></a><br /><a href="https://github.com/Kengine/cli/commits?author=dmdboi" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
@@ -151,7 +143,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ## License
 
-&copy; KhulnaSoft Limited, 2023
+&copy; Kengine Limited, 2023
 
 Distributed under MIT License (`The MIT License`).
 
@@ -161,7 +153,9 @@ See [LICENSE](LICENSE) for more information.
 
 [docs]: https://kengine.khulnasoft.com/docs/
 [docs_badge]: https://img.shields.io/badge/docs-reference-blue.svg?style=flat-square
-[release]: https://github.com/khulnasoft/kengine-cli/releases/latest
-[release_badge]: https://img.shields.io/github/release/khulnasoft/kengine-cli.svg?style=flat-square&ghcache=unused
+[release]: https://github.com/khulnasoft/cli/releases/latest
+[release_badge]: https://img.shields.io/github/release/kengine/cli.svg?style=flat-square&ghcache=unused
 [license]: https://opensource.org/licenses/MIT
-[license_badge]: https://img.shields.io/github/license/khulnasoft/kengine-cli.svg?color=blue&style=flat-square&ghcache=unused
+[license_badge]: https://img.shields.io/github/license/kengine/cli.svg?color=blue&style=flat-square&ghcache=unused
+[npm]: https://www.npmjs.com/package/@khulnasoft/cli
+[npm_badge]: https://img.shields.io/npm/v/@khulnasoft/cli?style=flat-square

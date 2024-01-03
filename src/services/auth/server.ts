@@ -25,10 +25,10 @@ const template = (name: string, logout?: string) => /*html*/ `<!DOCTYPE html>
       <div class="overflow-hidden rounded-lg">
         <div class="px-4 py-5 sm:p-6 space-y-6 flex flex-col items-center">
           <div>
-            <img src="https://cli-assets.khulnasoft.com/kengine_celebrations@2x.png" class="h-40 w-40 mb-6" alt="Kengine illustration"/>
+            <img src="https://cli-assets.kengine.khulnasoft.com/kengine_celebrations@2x.png" class="h-40 w-40 mb-6" alt="Kengine illustration"/>
           </div>
           <h1 class="text-white text-4xl" style="font-family: 'Poppins', sans-serif;">Welcome ${name || "kenginer"}!</h1>
-          <p class="text-white text-center" style="font-family: 'Poppins', sans-serif;">Return to your terminal to setup your environment and start with observability for serverless.</p>
+          <p class="text-white text-center" style="font-family: 'Poppins', sans-serif;">Return to your terminal to setup your environment and start observing your apps.</p>
          </div>
       </div>
     </div>

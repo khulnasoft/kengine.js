@@ -31,7 +31,7 @@ export async function handler(argv: Arguments<Options>) {
 
   let { endpoint } = argv;
 
-  const { KENGINE_DOMAIN = "khulnasoft.com" } = process.env;
+  const { KENGINE_DOMAIN = "kengine.khulnasoft.com" } = process.env;
 
   const loginUrl = `https://console.${endpoint || KENGINE_DOMAIN}`;
   await open.default(loginUrl);

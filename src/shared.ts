@@ -48,9 +48,9 @@ export function printError(message: string, err: Error, yargs: any) {
   Version: ${getVersion()}
   Environment: ${os.platform()}, node ${process.version} 
   Backend: ${client.defaults.baseURL}
-  Docs: khulnasoft.com/docs/
-  Support: khulnasoft.com
-  Bugs: github.com/khulnasoft/kengine-cli/issues
+  Docs: kengine.khulnasoft.com/docs/
+  Support: kengine.khulnasoft.com
+  Bugs: github.com/khulnasoft/cli/issues
     `);
     console.error(err);
   } else if (err) {

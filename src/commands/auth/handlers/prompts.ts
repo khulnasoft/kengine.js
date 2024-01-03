@@ -91,7 +91,7 @@ export async function promptForEnvironment(workspaces: Workspace[]): Promise<{ i
     });
 
   if (!environments.length) {
-    console.log("Create an environment in the Kengine console: https://console.khulnasoft.com");
+    console.log("Create an environment in the Kengine console: https://console.kengine.khulnasoft.com");
     return { isCreate: true, workspaceId: "", environmentId: "" };
   }
 

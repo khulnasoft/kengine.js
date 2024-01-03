@@ -4,7 +4,7 @@ import { OutputFormat, tableChars } from "../../../shared";
 import Table from "cli-table3";
 import { getAuthProfilePath } from "../../../services/auth";
 
-const { KENGINE_DOMAIN = "khulnasoft.com" } = process.env;
+const { KENGINE_DOMAIN = "kengine.khulnasoft.com" } = process.env;
 
 export function welcome() {
   console.log(`${chalk.greenBright("Welcome to Kengine")}\n`);

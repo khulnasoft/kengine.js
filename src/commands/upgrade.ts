@@ -5,7 +5,7 @@ import { getLatestVersion } from "../services/api/paths/cli";
 import spinner from "../services/spinner";
 const packageJson = require("../../package.json");
 
-const { KENGINE_DOMAIN = "khulnasoft.com" } = process.env;
+const { KENGINE_DOMAIN = "kengine.khulnasoft.com" } = process.env;
 
 export const command = "upgrade";
 export const desc = "Upgrade the Kengine CLI to the latest version";

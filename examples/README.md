@@ -1,4 +1,4 @@
-# KEngine CLI examples
+# Kengine CLI examples
 
 Example implmentations of the Kengine CLI in major CI/CD platforms:
 
@@ -8,7 +8,7 @@ Example implmentations of the Kengine CLI in major CI/CD platforms:
 - [CircleCI](circleci)
 - [Bitbucket](bitbucket)
 
-The above examples use the [KEngine Docker image](https://hub.docker.com/r/khulnasoft/kengine) to execute the KEngine CLI.
+The above examples use the [Kengine Docker image](https://hub.docker.com/r/khulnasoft/kengine) to execute the Kengine CLI.
 
 Note that the [Kengine GitHub action](https://github.com/marketplace/actions/setup-kengine) is available for GitHub actions too. 
 

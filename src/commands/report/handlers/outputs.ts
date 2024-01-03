@@ -5,7 +5,7 @@ import chalk from "chalk";
 import { Alert } from "../../../services/api/paths/alerts";
 import { AlertCheck } from "../../../services/api/paths/alert-checks";
 
-const { KENGINE_DOMAIN = "khulnasoft.com" } = process.env;
+const { KENGINE_DOMAIN = "kengine.khulnasoft.com" } = process.env;
 
 function list(alerts: Alert[], format: OutputFormat) {
   if (format === "json") {

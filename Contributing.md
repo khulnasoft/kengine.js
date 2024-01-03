@@ -4,7 +4,7 @@ You want to help improve the Kengine CLI? Awesome, thank you!
 
 ## Reporting Issues 
 
-Bugs, feature requests, and development-related questions should be directed to our [GitHub issue tracker](https://github.com/khulnasoft/kengine-cli/issues).
+Bugs, feature requests, and development-related questions should be directed to our [GitHub issue tracker](https://github.com/khulnasoft/cli/issues).
 
 When reporting a bug, please try and provide as much context as possible such as your operating system, Node version, and anything else that might be relevant to the bug. For feature requests, please explain what you're trying to do, and how the requested feature would help you do that.
 
@@ -30,10 +30,10 @@ $ npm run package:macos
  
 ## Setup
 
-[Fork](https://github.com/khulnasoft/kengine-cli) then clone this repository:
+[Fork](https://github.com/khulnasoft/cli) then clone this repository:
 
 ```
-$ git clone https://github.com/khulnasoft/kengine-cli.git
+$ git clone https://github.com/khulnasoft/cli.git
 $ cd cli
 $ npm ci
 ```

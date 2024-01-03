@@ -10,7 +10,7 @@ import { Event } from "../../../services/api/paths/events";
 import { isObjectEqual } from "../../../utils";
 import { writeFileSync } from "fs";
 
-const { KENGINE_DOMAIN = "khulnasoft.com" } = process.env;
+const { KENGINE_DOMAIN = "kengine.khulnasoft.com" } = process.env;
 
 function getQueryRun(data: { queryRun: QueryRun; aggregates?: Aggregates; series: Series[]; events?: Event[]; format: OutputFormat }) {
   const { queryRun, aggregates, series, events, format } = data;
